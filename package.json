@@ -1,0 +1,22 @@
+{
+  "name": "device-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "pm2": "pm2 start dist/index.js",
+    "test": "echo \"not implemented\"",
+    "build": "tsc"
+  },
+  "author": "bbergan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.10",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "pm2": "^3.5.1"
+  }
+}
